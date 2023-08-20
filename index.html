@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exequiel Raineri</title>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/estilos.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100;1,300;1,400&family=Unica+One&display=swap"
+    rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a157f31727.js" crossorigin="anonymous"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links
+      $("a").on('click', function (event) {
+
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+
+  <div class="contenedor">
+
+    <nav class="navbar navbar-expand-sm navbar-dark nav-menu">
+      <div class="container-fluid">
+        <br>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" style="justify-content: end;" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ABOUT">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#PROJECTS">PROJECTS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#CONTACT">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portafolio.html">ES</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <h2 class="textPortafolio"><span class="hoverPortafolio">Portafolio.</span></h2>
+
+
+    <div class="imagen">
+
+    </div>
+
+    <div class="textExe">
+
+      <h1>I'm <span> Exequiel Raineri</span></h1>
+      <h5>I'm a Java Developer</h5>
+    </div>
+
+
+
+    <div id="ABOUT" class="contenedor-about">
+      <div class="cuadrado"></div>
+      <div>
+        <h3>ABOUT</h3>
+        <hr>
+        <p>Currently, I am studying Programming at UNSE (National University of Santiago del Estero), and I have also
+          obtained a certification in Web Development from CoderHouse. My main focus is on backend development using
+          Java.
+
+
+        </p>
+        <p>
+          Skills:
+        </p>
+        <ul class="listaSkill">
+          <li>Java</li>
+          <li>MySQL</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Bootstrap</li>
+          <li>JavaScript</li>
+          <li>Servlet</li>
+          <li>Jsp</li>
+          <li>Spring Boot</li>
+          <li>Thymeleaf</li>
+        </ul>
+        <hr>
+      </div>
+    </div>
+
+
+    <div id="PROJECTS">
+      <h3>PROJECTS</h3>
+      <div class="listaProj">
+        <div class="proj-1">
+          <p>Blog</p>
+          <div class="bloque"></div>
+        </div>
+        <div class="proj-2">
+          <p>Point of sale</p>
+          <div class="bloque"></div>
+        </div>
+        <div class="proj-3">
+          <p>Inventory management</p>
+          <div class="bloque"></div>
+        </div>
+        <div class="proj-4">
+          <p>Padel Tournament</p>
+          <div class="bloque"></div>
+        </div>
+        <hr style="width: 200%;">
+      </div>
+    </div>
+
+    <div id="CONTACT">
+      <h3 class="text-center">CONTACT</h3>
+      <div class="contentContact">
+        <div>
+          <a href="https://github.com/exequielraineri" title="GitHub">
+            <i class="fa-brands fa-github icono"></i>
+          </a>
+
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/exequiel-raineri-88172714a/" title="Linkedin">
+
+            <i class="fa-brands fa-linkedin icono"></i>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+</body>
+
+</html>
