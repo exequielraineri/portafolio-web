@@ -121,9 +121,9 @@ html {
 
 .listaProj{
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: .5fr .5fr;
   width: 80%;
+  gap: 10px;
   height: 100%;
   align-items: center;
   padding-top: 40px;
@@ -132,6 +132,19 @@ html {
 .listaProj div{
   margin-bottom: 20px;
   height: 200px;
+}
+
+@media (max-width: 560px) {
+  .listaProj{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .listaProj div{
+    width: 80%;
+  }
+
 }
 
 .listaProj div img{
@@ -146,6 +159,7 @@ html {
   background-position: center;
   position: relative;
   z-index: 2;
+  
 }
 
 .proj-2{
@@ -154,6 +168,7 @@ html {
   background-position: center;
   position: relative;
   z-index: 2;
+ 
 }
 
 .proj-3{
@@ -162,6 +177,7 @@ html {
   background-position: center;
   position: relative;
   z-index: 2;
+  
 }
 
 .proj-4{
@@ -170,6 +186,7 @@ html {
   background-position: center;
   position: relative;
   z-index: 2;
+  
 }
 
 .proj-1 .bloque{
