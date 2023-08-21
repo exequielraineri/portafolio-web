@@ -355,3 +355,132 @@ a{
   border-bottom: solid black 1px;
   transition: .3s;
 }
+
+.bola{
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  position: absolute;
+  filter: blur(10px);
+  
+}
+
+
+.bola1{
+  animation-name: bola1;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+
+@keyframes bola1 {
+  0%{
+    top: 0%;
+    left: 20%;
+  }
+
+  80%{
+    top: 30%;
+    left: 20%;
+    opacity: 0;
+  }
+  100%{
+    top: 50%;
+    left: 10%;
+    opacity: 0;
+  }
+}
+
+
+
+.bola2{
+  animation-name: bola2;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+
+@keyframes bola2 {
+  0%{
+    top: 0%;
+    left: 10%;
+  }
+
+  80%{
+    top: 50%;
+    left: 10%;
+    opacity: 0;
+  }
+  100%{
+    top: 70%;
+    left: 10%;
+    opacity: 0;
+  }
+}
+
+
+.bola3{
+  animation-name: bola3;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes bola3 {
+  0%,100%{
+    top: 200%;
+    left: -5%;
+  }
+
+  50%{
+    top: 250%;
+    left: 90%;
+    filter: blur(20px);
+  }
+}
+
+.bola4{
+  animation-name: bola4;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes bola4 {
+  0%,100%{
+    top: 250%;
+    left: -5%;
+  }
+
+  50%{
+    top: 190%;
+    left: 50%;
+    filter: blur(20px);
+  }
+}
+
+
+.bola5{
+  animation-name: bola5;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+@keyframes bola5 {
+  0%,100%{
+    top: 200%;
+    left: 5%;
+  }
+
+  50%{
+    top: 250%;
+    left: 90%;
+    filter: blur(20px);
+  }
+}
