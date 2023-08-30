@@ -54,7 +54,7 @@
 <body>
 
 
-  <div class="contenedor">
+  <div class="contenedor" id="HOME">
 
     <nav class="navbar navbar-expand-sm navbar-dark nav-menu">
       <div class="container-fluid">
@@ -134,25 +134,28 @@
     <div id="PROJECTS">
       <h3>Proyectos</h3>
       <div class="listaProj">
-        <div class="proj-1">
+        <div class="proj-1 proj" data-bs-toggle="modal" data-bs-target="#ModalBlog">
           <p>Blog</p>
-          <div class="bloque"></div>
         </div>
-        <div class="proj-2">
+        <div class="proj-2 proj" data-bs-toggle="modal" data-bs-target="#ModalPunto">
           <p>Punto de venta</p>
-          <div class="bloque"></div>
         </div>
-        <div class="proj-3">
-          <p>Gestion de inventario</p>
-          <div class="bloque"></div>
+        <div class="proj-3 proj" data-bs-toggle="modal" data-bs-target="#ModalInventario">
+          <p>Gestión de Inventario</p>
         </div>
-        <div class="proj-4">
+        <div class="proj-4 proj" data-bs-toggle="modal" data-bs-target="#ModalPadel">
           <p>Torneo Padel</p>
-          <div class="bloque"></div>
         </div>
-        <hr style="width: 200%;">
       </div>
     </div>
+
+    <hr>
+
+
+
+
+
+
 
     <div id="CONTACT">
       <h3 class="text-center">Contacto</h3>
@@ -176,6 +179,328 @@
 
   </div>
 
+
+
+
+
+
+
+  <!-- The Modal -->
+  <div class="modal" id="ModalBlog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Blog - Proyecto Personal - Web</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="demoBlog" class="carousel slide shadow" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/blog/login.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/blog/register.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/blog/1.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/blog/2.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/blog/3.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/blog/5.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/blog/6.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/blog/7.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/blog/8.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/blog/Captura.JPG" alt="" class="d-block w-100">
+              </div>
+
+
+
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demoBlog" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demoBlog" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- The Modal -->
+  <div class="modal" id="ModalPunto">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Punto de Venta - Proyecto Personal - Escritorio</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="demoPunto" class="carousel slide shadow" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Drog/1.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/2.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/3.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/10.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/11.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/4.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/5.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/6.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/7.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/8.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/9.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/CrudMedicamento.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item ">
+                <img src="img/Drog/dash.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Drog/login.JPG" alt="" class="d-block mx-auto" height="500">
+              </div>
+
+
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demoPunto" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demoPunto" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- The Modal -->
+  <div class="modal" id="ModalInventario">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Gestión de Inventario - SelAgropauny - Web</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="demoInventario" class="carousel slide shadow" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/pauny/1.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/11.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/12.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/13.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/14.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/15.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/16.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/17.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/18.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/2.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/3.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/4.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pauny/5.JPG" alt="" class="d-block w-100">
+              </div>
+
+
+
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demoInventario" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demoInventario" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- The Modal -->
+  <div class="modal" id="ModalPadel">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Sistema Gestión Padel - Proyecto Personal - Web</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <!-- Modal body -->
+        <div class="modal-body">
+          <!-- Carousel -->
+          <div id="demoPadel" class="carousel slide shadow" data-bs-ride="carousel">
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/padel/1.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/padel/2.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/padel/3.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/padel/4.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/padel/5.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/padel/6.JPG" alt="" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="img/padel/7.JPG" alt="" class="d-block w-100">
+              </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demoPadel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demoPadel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <div class="bola bola1"></div>
+  <div class="bola bola2"></div>
+  <div class="bola bola3"></div>
+  <div class="bola bola4"></div>
+  <div class="bola bola5"></div>
+
+  <a href="#HOME" class="volver btn btn-lg btn-outline-secondary bg-dark"><i class="fa-solid fa-arrow-up"></i></a>
 
 
 
