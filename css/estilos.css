@@ -99,6 +99,7 @@ html {
 
 .cuadrado:hover{
   filter: grayscale(0);
+  box-shadow: 10px 10px 5px gray;
 }
 
 .contenedor-about{
@@ -167,13 +168,7 @@ html {
   
 }
 
-.proj-1 button{
-  z-index: 3;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 
-}
 
 
 .proj-2{
@@ -199,30 +194,21 @@ html {
   
 }
 
+.proj-5{
+  background-image: url(../img/javaFX_POS/Captura1.PNG);
+  
+  z-index: 2;
+  
+}
 
 
-
-.proj-1:hover{
+.proj:hover{
   cursor: pointer;
   transition: .3s;
 }
 
-.proj-2:hover{
-  cursor: pointer;
-  transition: .3s;
-}
 
-.proj-3:hover{
-  cursor: pointer;
-  transition: .3s;
-}
-
-.proj-4:hover{
-  cursor: pointer;
-  transition: .3s;
-}
-
-.proj-1 p{
+.proj p{
   background-color: black;
   z-index: 2;
   opacity: 70%;
@@ -232,67 +218,17 @@ html {
   align-items: center;
   justify-content: center;
   height: 100%;
+  
 }
 
-.proj-2 p{
-  background-color: black;
-  z-index: 2;
-  opacity: 70%;
-  font-size: 2em;
-  font-weight: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
 
-.proj-3 p{
-  background-color: black;
-  z-index: 2;
-  opacity: 70%;
-  font-size: 2em;
-  font-weight: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
 
-.proj-4 p{
-  background-color: black;
-  z-index: 2;
-  opacity: 70%;
-  font-size: 2em;
-  font-weight: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.proj-1 p:hover{
+.proj p:hover{
   background-color: transparent;
   transition: .3s;
   color: transparent;
 }
 
-.proj-2 p:hover{
-  background-color: transparent;
-  transition: .3s;
-  color: transparent;
-}
-
-.proj-3 p:hover{
-  background-color: transparent;
-  transition: .3s;
-  color: transparent;
-}
-
-.proj-4 p:hover{
-  background-color: transparent;
-  transition: .3s;
-  color: transparent;
-}
 
 
 
