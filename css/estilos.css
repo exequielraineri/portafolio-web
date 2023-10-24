@@ -201,6 +201,12 @@ html {
   
 }
 
+.proj-6{
+  background-image: url(../img/landingpage/Captura1.PNG);
+  
+  z-index: 2;
+  
+}
 
 .proj:hover{
   cursor: pointer;
