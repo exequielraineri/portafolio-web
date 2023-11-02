@@ -1,25 +1,23 @@
-*{
+* {
   box-sizing: border-box;
 }
-body{
+body {
   background-color: black;
 }
 
-*{
+* {
   transition: all 0.5s ease;
 }
 
-.contenedor{
+.contenedor {
   background-color: transparent;
-  
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-
-.nav-menu{
+.nav-menu {
   position: absolute;
   background-color: gray;
   right: 0;
@@ -27,7 +25,7 @@ html {
   padding-right: 20px;
 }
 
-.imagen{
+.imagen {
   position: absolute;
   top: 0;
   right: 0;
@@ -41,9 +39,7 @@ html {
   z-index: -1;
 }
 
-
-
-.textPortafolio{
+.textPortafolio {
   background-color: black;
   color: white;
   height: 100vh;
@@ -55,40 +51,40 @@ html {
   margin-bottom: 0;
 }
 
-.textExe{
+.textExe {
   background-color: black;
   position: absolute;
   top: 80%;
-  padding: .5em;
+  padding: 0.5em;
   left: 15%;
   color: whitesmoke;
 }
 
-.textExe:hover span{
-  color: orange;
-  transition: .3s;
-  font-size: 1.1em;
+.textExe:hover span {
+  color: lightblue;
+  transition: .3s; 
 }
 
-
-#ABOUT{
+#ABOUT {
   position: relative;
-  background-color: lightgray;
-  margin-top: 0;
-  justify-items: center;
-  padding: 30px 0 30px 0;
+  background-color: rgba(255,255,255,0.8);
+  width: 100%;
+  padding: 30px 20px;
+  height: 100%;
+  border-radius: 0 0 20px 20px;
 }
 
-.listaSkill{
+.listaSkill {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.cuadrado{
+.cuadrado {
   background-color: gray;
   width: 80%;
   height: 40vh;
-  box-shadow: -20px -20px 5px gray;
+  box-shadow: 0 0 5px;
+  border-radius: 3px 30px;
   background-image: url(../img/exe3.jpg);
   background-position: center;
   background-size: cover;
@@ -97,23 +93,24 @@ html {
   filter: grayscale();
 }
 
-.cuadrado:hover{
+.cuadrado:hover {
   filter: grayscale(0);
-  box-shadow: 10px 10px 5px gray;
+  box-shadow: 0 0 10px;
+  transition: .3s ease all;
 }
 
-.contenedor-about{
+.contenedor-about {
   display: grid;
-  grid-template-columns: .5fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   gap: 20px;
   justify-content: center;
   align-items: center;
 }
 
-#PROJECTS{
+#PROJECTS {
   width: 100%;
   padding: 20px 0 20px 0;
-  background-color: black;
+  background-color:black;
   display: flex;
   flex-direction: column;
   color: white;
@@ -121,26 +118,33 @@ html {
   align-items: center;
 }
 
-.listaProj{
+/*
+.listaProj {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   text-align: center;
   width: 80%;
+}*/
+
+.listaProj{
+  margin-top: 30px;
+  display: flex;
+  width: 90%;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-
-
-
-
-.proj{
-  width: 100%;
-  height: 150px;
+.proj {
+  width: 40%;
+  height: 200px;
   background-size: cover;
+  background-position: center;
 }
 
-
-.proj p{
+.proj p {
   background-color: black;
   z-index: 2;
   opacity: 70%;
@@ -155,88 +159,68 @@ html {
 }
 
 
-
-.proj-1{
+.proj-1 {
   background-image: url(../img/P-1.JPG);
   z-index: 2;
-  
 }
 
-
-
-
-.proj-2{
+.proj-2 {
   background-image: url(../img/P-2.JPG);
-  
+
   z-index: 2;
- 
 }
 
-
-
-.proj-3{
+.proj-3 {
   background-image: url(../img/P-3.JPG);
-  
+
   z-index: 2;
-  
 }
 
-.proj-4{
+.proj-4 {
   background-image: url(../img/P-4.JPG);
-  
+
   z-index: 2;
-  
 }
 
-.proj-5{
+.proj-5 {
   background-image: url(../img/javaFX_POS/Captura1.PNG);
-  
+
   z-index: 2;
-  
 }
 
-.proj-6{
+.proj-6 {
   background-image: url(../img/landingpage/Captura1.PNG);
-  
+
   z-index: 2;
-  
 }
 
-.proj-7{
+.proj-7 {
   background-image: url(../img/landing-pauny/1.PNG);
-  
+
   z-index: 2;
-  
 }
 
-.proj:hover{
+.proj:hover {
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
+  box-shadow: 0 0 10px white;
+  border-radius: 10px;
 }
 
-
-
-
-
-
-.proj p:hover{
+.proj p:hover {
   background-color: transparent;
-  transition: .3s;
   color: transparent;
+  transition: .2s ease all;
 }
 
-
-
-
-#CONTACT{
+#CONTACT {
   padding: 20px 0 20px 0;
   color: whitesmoke;
   background-color: black;
   height: 20vh;
- 
 }
 
-.contentContact{
+.contentContact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -244,198 +228,229 @@ html {
   padding-top: 20px;
 }
 
-
-.icono{
+.icono {
   font-size: 2.5em;
   border-bottom: solid white 1px;
-
 }
 
-a{
+a {
   text-decoration: none;
   color: white;
 }
 
-.icono:hover{
+.icono:hover {
   border-bottom: solid black 1px;
-  transition: .3s;
+  transition: 0.3s;
+  text-shadow: 0 0 3px white;
 }
 
-.bola{
+.bola {
   width: 10px;
   height: 10px;
   background-color: white;
+  border-radius: 50%;
   position: absolute;
-  filter: blur(7px);
-  
+  filter: blur(4px);
+  box-shadow: 0px 0px 10px 1px white;
 }
 
-
-.bola1{
+.bola1 {
   animation-name: bola1;
   animation-duration: 23s;
   animation-iteration-count: infinite;
   animation-direction: normal;
+  box-shadow: -5px -10px 10px 3px lightblue;
 }
 
-
 @keyframes bola1 {
-  0%{
+  0% {
     top: 0%;
     left: 20%;
+    box-shadow: -5px -10px 10px 3px lightblue;
   }
 
-  80%{
+  80% {
     top: 30%;
     left: 20%;
     opacity: 0;
   }
-  100%{
+  100% {
     top: 50%;
     left: 10%;
     opacity: 0;
+    box-shadow: 5px 10px 10px 10px lightblue;
   }
 }
 
-
-
-.bola2{
+.bola2 {
   animation-name: bola2;
   animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-direction: normal;
 }
 
-
 @keyframes bola2 {
-  0%{
+  0% {
     top: 0%;
     left: 10%;
   }
 
-  80%{
+  80% {
     top: 50%;
     left: 10%;
     opacity: 0;
   }
-  100%{
+  100% {
     top: 70%;
     left: 10%;
     opacity: 0;
   }
 }
 
-
-.bola3{
+.bola3 {
   animation-name: bola3;
   animation-duration: 24s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-
 @keyframes bola3 {
-  0%,100%{
+  0%,
+  100% {
     top: 200%;
     left: -5%;
   }
 
-  50%{
+  50% {
     top: 250%;
     left: 90%;
     filter: blur(5px);
   }
 }
 
-.bola4{
+.bola4 {
   animation-name: bola4;
   animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-
 @keyframes bola4 {
-  0%,100%{
+  0%,
+  100% {
     top: 250%;
     left: -5%;
   }
 
-  50%{
+  50% {
     top: 190%;
     left: 50%;
     filter: blur(10px);
   }
-  
 }
 
-
-.bola5{
+.bola5 {
   animation-name: bola5;
   animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
-
 @keyframes bola5 {
-  0%,100%{
+  0%,
+  100% {
     top: 200%;
     left: 5%;
   }
 
-  50%{
+  50% {
     top: 250%;
     left: 90%;
     filter: blur(10px);
   }
 }
 
-
-.volver{
+.volver {
   position: fixed;
   z-index: 6;
   bottom: 20px;
   right: 20px;
 }
+.volver:hover{
+  box-shadow: 0 0 5px lightblue;
+  transition: .3s ease all;
+}
 
+.icon-redes {
+  box-shadow: 0 0 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
 
+.icon-redes:hover{
+  background-color: #fff;
+  color: black;
+  transition: .2s ease all;
+}
+
+.bloque-skills{
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 30px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.bloque-skills img{
+  padding: 3px;
+  border-radius: 1000px;
+  width: 3rem;
+}
+
+.bloque-skills img:hover{
+  box-shadow: 0px 0px 5px;
+  transition: 0s ease-in-out all;
+}
 
 @media (max-width: 560px) {
   .listaProj {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .listaProj div {
-      width: 80%;
-    }
-  
-    .modal h4 {
-      font-size: .9em;
-    }
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .listaProj div {
+    width: 80%;
+  }
 
-    .contenedor-about{
-      display: grid;
-      grid-template-columns: 1fr;
-      align-items: center;
-      justify-items: center;
-    }
-    .contenedor-about div{
-      padding: 0px 40px;
-    }
+  .modal h4 {
+    font-size: 0.9em;
+  }
 
-    .cuadrado{
-      width: 80%;
+  .contenedor-about {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .contenedor-about div {
+    padding: 0px 40px;
+  }
 
-    }
+  .cuadrado {
+    width: 80%;
+  }
 
-    h3{
-      text-align: center;
-    }
-
+  h3 {
+    text-align: center;
+  }
 }
