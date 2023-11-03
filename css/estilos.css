@@ -200,6 +200,11 @@ html {
   z-index: 2;
 }
 
+.proj-8 {
+  background-image: url(../img/todoApp/Captura1.PNG);
+  z-index: 2;
+}
+
 .proj:hover {
   cursor: pointer;
   transition: 0.3s;
@@ -395,6 +400,29 @@ a {
   background-color: #fff;
   color: black;
   transition: .2s ease all;
+}
+
+#Skills{
+  background-color: rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  animation-name: animacion-shadow;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+}
+
+@keyframes animacion-shadow{
+  0%,100%{
+    box-shadow: 0 0 5px white;
+  }
+  50%{
+    box-shadow: 0 0 20px white;
+  }
 }
 
 .bloque-skills{
