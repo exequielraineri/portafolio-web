@@ -205,6 +205,11 @@ html {
   z-index: 2;
 }
 
+.proj-9 {
+  background-image: url(../img/MovieApp/1.PNG);
+  z-index: 2;
+}
+
 .proj:hover {
   cursor: pointer;
   transition: 0.3s;
