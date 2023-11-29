@@ -1,604 +1,1097 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Exequiel Raineri</title>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Exequiel Raineri</title>
-  <!-- Latest compiled and minified CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="css/estilos.css"
+    />
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100;1,300;1,400&family=Unica+One&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,100;1,300;1,400&family=Unica+One&display=swap"
-    rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/a157f31727.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <script src="https://kit.fontawesome.com/a157f31727.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Add smooth scrolling to all links
-      $("a").on("click", function (event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
+            // Store hash
+            var hash = this.hash;
 
-          // Store hash
-          var hash = this.hash;
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $("html, body").animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            800,
-            function () {
-              // Add hash (#) to URL when done scrolling (default click behavior)
-              window.location.hash = hash;
-            }
-          );
-        } // End if
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
       });
-    });
-  </script>
-</head>
+    </script>
+  </head>
 
-<body>
-  <div class="contenedor" id="HOME">
-    <nav class="navbar navbar-expand-sm navbar-dark nav-menu">
-      <div class="container-fluid">
-        <br />
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" style="justify-content: end" id="collapsibleNavbar">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#">INICIO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#ABOUT">SOBRE MI</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#PROJECTS">PROYECTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#CONTACT">CONTACTO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">EN</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <h2 class="textPortafolio">
-      <span class="hoverPortafolio">Portafolio.</span>
-    </h2>
-
-    <div class="imagen"></div>
-
-    <div class="textExe">
-      <h1>Soy <span> Exequiel Raineri</span></h1>
-      <h5>Full-Stack Java Developer</h5>
-      <div style="display: flex; width: 50%; align-items: center; gap: 10px">
-        <a href="https://www.instagram.com/exeraineri/" target="_blank" class="icon-redes">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://github.com/exequielraineri" target="_blank" class="icon-redes">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/exequielraineri/" target="_blank" class="icon-redes">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-        <a href="https://drive.google.com/file/d/1fsZGYi-hD3Xr5PGCf1bgPW8Cmp_UkeTy/view?usp=sharing" title="Curriculum" target="_blank"  class="icon-redes">
-          CV
-        </a>
-      </div>
-    </div>
-
-    <div id="ABOUT" class="contenedor-about">
-      <div class="cuadrado"></div>
-      <div>
-        <h3>Sobre Mi</h3>
-        <hr />
-        <p>
-          Soy un estudiante universitario apasionado por la programación y la
-          tecnología. Durante los últimos dos años, he estado trabajando en
-          proyectos personales donde he adquirido habilidades en diversas
-          tecnologías, con un enfoque en Java. Mi objetivo es seguir creciendo
-          como desarrollador y contribuir a soluciones innovadoras.
-        </p>
-        <p>
-          Cursando la carrera de Programador Universitario en Informática en
-          la UNSE (Universidad Nacional de Santiago del Estero). Con
-          certificación en Desarrollo Web de CoderHouse del 2021.
-        </p>
-
-        <div id="Skills">
-          <h3>Habilidades</h3>
-
-          <div class="bloque-skills">
-            <div>
-              <img title="Java" src="img/skils/java_original.png" alt="Java">
-              <cite class="titulo-skill">Java</cite>
-            </div>
-            <div>
-              <img title="Spring Framework" src="img/skils/spring.png" alt="Spring">
-              <cite class="titulo-skill">Spring</cite>
-            </div>
-            <div>
-              <img title="MySql" src="img/skils/mysql.png" alt="MySql">
-              <cite class="titulo-skill">MySql</cite>
-            </div>
-            <div>
-              <img title="GitHub" src="img/skils/github.png" alt="GitHub">
-              <cite class="titulo-skill">GitHub</cite>
-            </div>
-            <div>
-              <img title="HTML5" src="img/skils/html.png" alt="HTML5">
-              <cite class="titulo-skill">HTML</cite>
-            </div>
-            <div>
-              <img title="CSS3" src="img/skils/css.png" alt="CSS">
-              <cite class="titulo-skill">CSS</cite>
-            </div>
-            <div>
-              <img title="JavaScript" src="img/skils/javascript.png" alt="JavaScript">
-              <cite class="titulo-skill">JavaScript</cite>
-            </div>
-            <div>
-              <img title="Figma" src="img/skils/figma.png" alt="Figma">
-              <cite class="titulo-skill">Figma</cite>
-            </div>
-            <div>
-              <img title="React Js" src="img/skils/react.png" alt="React Js"
-                style="background-color: black; padding: 3px;">
-              <cite class="titulo-skill">React Js</cite>
-            </div>
+  <body>
+    <div
+      class="contenedor"
+      id="HOME"
+    >
+      <nav class="navbar navbar-expand-sm navbar-dark nav-menu">
+        <div class="container-fluid">
+          <br />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse"
+            style="justify-content: end"
+            id="collapsibleNavbar"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  >INICIO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#ABOUT"
+                  >SOBRE MI</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#PROJECTS"
+                  >PROYECTOS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#CONTACT"
+                  >CONTACTO</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="index.html"
+                  >EN</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-        <hr />
+      </nav>
+
+      <h2 class="textPortafolio">
+        <span class="hoverPortafolio">Portafolio.</span>
+      </h2>
+
+      <div class="imagen"></div>
+
+      <div class="textExe">
+        <h1>Soy <span> Exequiel Raineri</span></h1>
+        <h5>Full-Stack Java Developer</h5>
+        <div style="display: flex;
+        width: 100%;
+         align-items: center;
+          gap: 10px">
+          <a
+            href="https://www.instagram.com/exeraineri/"
+            target="_blank"
+            class="icon-redes"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/exequielraineri"
+            target="_blank"
+            class="icon-redes"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/exequielraineri/"
+            target="_blank"
+            class="icon-redes"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://drive.google.com/file/d/1fsZGYi-hD3Xr5PGCf1bgPW8Cmp_UkeTy/view?usp=sharing"
+            title="Curriculum"
+            target="_blank"
+            class="icon-redes"
+          >
+            CV
+          </a>
+        </div>
       </div>
-    </div>
 
-    <div id="PROJECTS">
-      <h3>Proyectos</h3>
-      <div class="listaProj">
-        <div class="proj-1 proj" data-bs-toggle="modal" data-bs-target="#ModalBlog">
-          <p>Blog</p>
-        </div>
-        <div class="proj-2 proj" data-bs-toggle="modal" data-bs-target="#ModalPunto">
-          <p>Punto de venta</p>
-        </div>
-        <div class="proj-3 proj" data-bs-toggle="modal" data-bs-target="#ModalInventario">
-          <p>Gestión de Inventario</p>
-        </div>
-        <div class="proj-4 proj" data-bs-toggle="modal" data-bs-target="#ModalPadel">
-          <p>Torneo Padel</p>
-        </div>
-        <div class="proj-5 proj" data-bs-toggle="modal" data-bs-target="#ModalJavaFXPOS">
-          <p>Punto de Venta - JavaFX</p>
-        </div>
-        <div class="proj-6 proj">
-          <a href="https://exequielraineri.github.io/Landing-Page/" target="_blank">
-            <p>Landing Page</p>
-          </a>
-        </div>
-        <div class="proj-7 proj">
-          <a href="https://exequielraineri.github.io/Pauny-Landing-Page/" target="_blank">
-            <p>Sel Agropauny</p>
-          </a>
-        </div>
-        <div class="proj-8 proj">
-          <a href="https://exequielraineri.github.io/TodoApp/" target="_blank">
-            <p>React | TodoApp</p>
-          </a>
-        </div>
-        <div class="proj-9 proj">
-          <a href="https://exequielraineri.github.io/MovieApp/" target="_blank">
-            <p>React | MovieApp</p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <hr />
-
-    <div id="CONTACT">
-      <h3 class="text-center">Contacto</h3>
-      <div class="contentContact">
+      <div
+        id="ABOUT"
+        class="contenedor-about"
+      >
+        <div class="cuadrado"></div>
         <div>
-          <a href="https://github.com/exequielraineri" title="GitHub">
-            <i class="fa-brands fa-github icono"></i>
-          </a>
+          <h3>Sobre Mi</h3>
+          <hr />
+          <p>
+            Soy un estudiante universitario apasionado por la programación y la
+            tecnología. Durante los últimos dos años, he estado trabajando en
+            proyectos personales donde he adquirido habilidades en diversas
+            tecnologías, con un enfoque en Java. Mi objetivo es seguir creciendo
+            como desarrollador y contribuir a soluciones innovadoras.
+          </p>
+          <p>
+            Cursando la carrera de Programador Universitario en Informática en
+            la UNSE (Universidad Nacional de Santiago del Estero). Con
+            certificación en Desarrollo Web de CoderHouse del 2021.
+          </p>
+
+          <div id="Skills">
+            <h3>Habilidades</h3>
+
+            <div class="bloque-skills">
+              <div>
+                <img
+                  title="Java"
+                  src="img/skils/java_original.png"
+                  alt="Java"
+                />
+                <cite class="titulo-skill">Java</cite>
+              </div>
+              <div>
+                <img
+                  title="Spring Framework"
+                  src="img/skils/spring.png"
+                  alt="Spring"
+                />
+                <cite class="titulo-skill">Spring</cite>
+              </div>
+              <div>
+                <img
+                  title="MySql"
+                  src="img/skils/mysql.png"
+                  alt="MySql"
+                />
+                <cite class="titulo-skill">MySql</cite>
+              </div>
+              <div>
+                <img
+                  title="GitHub"
+                  src="img/skils/github.png"
+                  alt="GitHub"
+                />
+                <cite class="titulo-skill">GitHub</cite>
+              </div>
+              <div>
+                <img
+                  title="HTML5"
+                  src="img/skils/html.png"
+                  alt="HTML5"
+                />
+                <cite class="titulo-skill">HTML</cite>
+              </div>
+              <div>
+                <img
+                  title="CSS3"
+                  src="img/skils/css.png"
+                  alt="CSS"
+                />
+                <cite class="titulo-skill">CSS</cite>
+              </div>
+              <div>
+                <img
+                  title="JavaScript"
+                  src="img/skils/javascript.png"
+                  alt="JavaScript"
+                />
+                <cite class="titulo-skill">JavaScript</cite>
+              </div>
+              <div>
+                <img
+                  title="Figma"
+                  src="img/skils/figma.png"
+                  alt="Figma"
+                />
+                <cite class="titulo-skill">Figma</cite>
+              </div>
+              <div>
+                <img
+                  title="React Js"
+                  src="img/skils/react.png"
+                  alt="React Js"
+                  style="background-color: black; padding: 3px"
+                />
+                <cite class="titulo-skill">React Js</cite>
+              </div>
+            </div>
+          </div>
+          <hr />
         </div>
-        <div>
-          <a href="https://www.linkedin.com/in/exequiel-raineri-88172714a/" title="Linkedin">
-            <i class="fa-brands fa-linkedin icono"></i>
-          </a>
+      </div>
+
+      <div id="PROJECTS">
+        <h3>Proyectos</h3>
+        <div class="listaProj">
+          <div
+            class="proj-1 proj"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalBlog"
+          >
+            <p>Blog</p>
+          </div>
+          <div
+            class="proj-2 proj"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalPunto"
+          >
+            <p>Punto de venta</p>
+          </div>
+          <div
+            class="proj-3 proj"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalInventario"
+          >
+            <p>Gestión de Inventario</p>
+          </div>
+          <div
+            class="proj-4 proj"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalPadel"
+          >
+            <p>Torneo Padel</p>
+          </div>
+          <div
+            class="proj-5 proj"
+            data-bs-toggle="modal"
+            data-bs-target="#ModalJavaFXPOS"
+          >
+            <p>Punto de Venta - JavaFX</p>
+          </div>
+          <div class="proj-6 proj">
+            <a
+              href="https://exequielraineri.github.io/Landing-Page/"
+              target="_blank"
+            >
+              <p>Landing Page</p>
+            </a>
+          </div>
+          <div class="proj-7 proj">
+            <a
+              href="https://exequielraineri.github.io/Pauny-Landing-Page/"
+              target="_blank"
+            >
+              <p>Sel Agropauny</p>
+            </a>
+          </div>
+          <div class="proj-8 proj">
+            <a
+              href="https://exequielraineri.github.io/TodoApp/"
+              target="_blank"
+            >
+              <p>React | TodoApp</p>
+            </a>
+          </div>
+          <div class="proj-9 proj">
+            <a
+              href="https://exequielraineri.github.io/MovieApp/"
+              target="_blank"
+            >
+              <p>React | MovieApp</p>
+            </a>
+          </div>
         </div>
-        <div>
-          <a href="https://drive.google.com/file/d/1fsZGYi-hD3Xr5PGCf1bgPW8Cmp_UkeTy/view?usp=sharing" target="_blank"
-            title="Curriculum">
-            <i class="fa-regular fa-file icono"></i>
-          </a>
+      </div>
+
+      <hr />
+
+      <div id="CONTACT">
+        <h3 class="text-center">Contacto</h3>
+        <div class="contentContact">
+          <div>
+            <a
+              href="https://github.com/exequielraineri"
+              title="GitHub"
+            >
+              <i class="fa-brands fa-github icono"></i>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/exequiel-raineri-88172714a/"
+              title="Linkedin"
+            >
+              <i class="fa-brands fa-linkedin icono"></i>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://drive.google.com/file/d/1fsZGYi-hD3Xr5PGCf1bgPW8Cmp_UkeTy/view?usp=sharing"
+              target="_blank"
+              title="Curriculum"
+            >
+              <i class="fa-regular fa-file icono"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!-- The Modal -->
-  <div class="modal" id="ModalBlog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Blog - Proyecto Personal - Web</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
+    <!-- The Modal -->
+    <div
+      class="modal"
+      id="ModalBlog"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Blog - Proyecto Personal - Web</h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
 
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- Carousel -->
-          <div id="demoBlog" class="carousel slide shadow" data-bs-ride="carousel">
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/blog/login.JPG" alt="" class="d-block w-100" />
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- Carousel -->
+            <div
+              id="demoBlog"
+              class="carousel slide shadow"
+              data-bs-ride="carousel"
+            >
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/blog/login.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/register.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/1.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/2.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/3.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/5.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/6.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/7.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/8.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/blog/Captura.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/blog/register.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/blog/1.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/blog/2.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/blog/3.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/blog/5.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/blog/6.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/blog/7.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/blog/8.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/blog/Captura.JPG" alt="" class="d-block w-100" />
-              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demoBlog"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demoBlog"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
+          </div>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demoBlog" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demoBlog" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
             </button>
           </div>
         </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
-            Cerrar
-          </button>
-        </div>
       </div>
     </div>
-  </div>
 
-  <!-- The Modal -->
-  <div class="modal" id="ModalPunto">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">
-            Punto de Venta - Proyecto Personal - Escritorio
-          </h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
+    <!-- The Modal -->
+    <div
+      class="modal"
+      id="ModalPunto"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Punto de Venta - Proyecto Personal - Escritorio
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
 
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- Carousel -->
-          <div id="demoPunto" class="carousel slide shadow" data-bs-ride="carousel">
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/Drog/1.JPG" alt="" class="d-block w-100" />
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- Carousel -->
+            <div
+              id="demoPunto"
+              class="carousel slide shadow"
+              data-bs-ride="carousel"
+            >
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/Drog/1.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/2.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/3.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/10.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/11.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/4.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/5.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/6.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/7.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/8.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/9.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/CrudMedicamento.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/dash.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/Drog/login.JPG"
+                    alt=""
+                    class="d-block mx-auto"
+                    height="500"
+                  />
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/Drog/2.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/3.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/10.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/11.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/4.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/5.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/6.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/7.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/8.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/9.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/CrudMedicamento.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/dash.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/Drog/login.JPG" alt="" class="d-block mx-auto" height="500" />
-              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demoPunto"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demoPunto"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
+          </div>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demoPunto" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demoPunto" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
             </button>
           </div>
         </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
-            Cerrar
-          </button>
-        </div>
       </div>
     </div>
-  </div>
 
-  <!-- The Modal -->
-  <div class="modal" id="ModalInventario">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">
-            Gestión de Inventario - SelAgropauny - Web
-          </h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
+    <!-- The Modal -->
+    <div
+      class="modal"
+      id="ModalInventario"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Gestión de Inventario - SelAgropauny - Web
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
 
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- Carousel -->
-          <div id="demoInventario" class="carousel slide shadow" data-bs-ride="carousel">
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/pauny/1.JPG" alt="" class="d-block w-100" />
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- Carousel -->
+            <div
+              id="demoInventario"
+              class="carousel slide shadow"
+              data-bs-ride="carousel"
+            >
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/pauny/1.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/11.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/12.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/13.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/14.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/15.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/16.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/17.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/18.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/2.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/3.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/4.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/pauny/5.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/pauny/11.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/12.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/13.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/14.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/15.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/16.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/17.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/18.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/2.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/3.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/4.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/pauny/5.JPG" alt="" class="d-block w-100" />
-              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demoInventario"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demoInventario"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
+          </div>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demoInventario" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demoInventario" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
             </button>
           </div>
         </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
-            Cerrar
-          </button>
-        </div>
       </div>
     </div>
-  </div>
 
-  <!-- The Modal -->
-  <div class="modal" id="ModalPadel">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">
-            Sistema Gestión Padel - Proyecto Personal -
-            <a href="https://exequielraineri.github.io/web-estatica-torneo/torneos.html" target="_blank"
-              style="color: blue">Web</a>
-          </h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
+    <!-- The Modal -->
+    <div
+      class="modal"
+      id="ModalPadel"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Sistema Gestión Padel - Proyecto Personal -
+              <a
+                href="https://exequielraineri.github.io/web-estatica-torneo/torneos.html"
+                target="_blank"
+                style="color: blue"
+                >Web</a
+              >
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
 
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- Carousel -->
-          <div id="demoPadel" class="carousel slide shadow" data-bs-ride="carousel">
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/padel/1.JPG" alt="" class="d-block w-100" />
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- Carousel -->
+            <div
+              id="demoPadel"
+              class="carousel slide shadow"
+              data-bs-ride="carousel"
+            >
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/padel/1.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/padel/2.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/padel/3.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/padel/4.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/padel/5.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/padel/6.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/padel/7.JPG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/padel/2.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/padel/3.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/padel/4.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/padel/5.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/padel/6.JPG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/padel/7.JPG" alt="" class="d-block w-100" />
-              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demoPadel"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demoPadel"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
+          </div>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demoPadel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demoPadel" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
             </button>
           </div>
         </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
-            Cerrar
-          </button>
-        </div>
       </div>
     </div>
-  </div>
 
-  <!-- The Modal -->
-  <div class="modal" id="ModalJavaFXPOS">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">
-            Sistema Punto de Venta de Escritorio con JavaFX
-          </h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
+    <!-- The Modal -->
+    <div
+      class="modal"
+      id="ModalJavaFXPOS"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">
+              Sistema Punto de Venta de Escritorio con JavaFX
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
 
-        <!-- Modal body -->
-        <div class="modal-body">
-          <!-- Carousel -->
-          <div id="demoJavaFXPOS" class="carousel slide shadow" data-bs-ride="carousel">
-            <!-- The slideshow/carousel -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/javaFX_POS/9.PNG" alt="" class="d-block w-100" />
+          <!-- Modal body -->
+          <div class="modal-body">
+            <!-- Carousel -->
+            <div
+              id="demoJavaFXPOS"
+              class="carousel slide shadow"
+              data-bs-ride="carousel"
+            >
+              <!-- The slideshow/carousel -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="img/javaFX_POS/9.PNG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/javaFX_POS/Captura1.PNG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/javaFX_POS/Captura2.PNG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/javaFX_POS/Captura3.PNG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/javaFX_POS/Captura4.PNG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/javaFX_POS/Captura5.PNG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/javaFX_POS/Captura6.PNG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="img/javaFX_POS/8.PNG"
+                    alt=""
+                    class="d-block w-100"
+                  />
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/javaFX_POS/Captura1.PNG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/javaFX_POS/Captura2.PNG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/javaFX_POS/Captura3.PNG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/javaFX_POS/Captura4.PNG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/javaFX_POS/Captura5.PNG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/javaFX_POS/Captura6.PNG" alt="" class="d-block w-100" />
-              </div>
-              <div class="carousel-item">
-                <img src="img/javaFX_POS/8.PNG" alt="" class="d-block w-100" />
-              </div>
+
+              <!-- Left and right controls/icons -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demoJavaFXPOS"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demoJavaFXPOS"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
             </div>
+          </div>
 
-            <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demoJavaFXPOS" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demoJavaFXPOS" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
             </button>
           </div>
         </div>
-
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">
-            Cerrar
-          </button>
-        </div>
       </div>
     </div>
-  </div>
 
-  <div class="bola bola1"></div>
-  <div class="bola bola2"></div>
-  <div class="bola bola3"></div>
-  <div class="bola bola4"></div>
-  <div class="bola bola5"></div>
+    <div class="bola bola1"></div>
+    <div class="bola bola2"></div>
+    <div class="bola bola3"></div>
+    <div class="bola bola4"></div>
+    <div class="bola bola5"></div>
 
-  <a href="#HOME" class="volver btn btn-lg btn-outline-secondary bg-dark"><i class="fa-solid fa-arrow-up"></i></a>
-</body>
-
+    <a
+      href="#HOME"
+      class="volver btn btn-lg btn-outline-secondary bg-dark"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
+  </body>
 </html>
