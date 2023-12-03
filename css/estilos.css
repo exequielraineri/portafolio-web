@@ -374,7 +374,7 @@ html {
 }
 
 .proj-8 {
-  background-image: url(../img/todoApp/Captura1.PNG);
+  background-image: url(../img/todoApp.JPG);
   z-index: 2;
 }
 
@@ -386,6 +386,11 @@ html {
   z-index: 2;
 }
 
+.proj-10 {
+  background-image: url(../img/vivero.JPG);
+
+  z-index: 2;
+}
 
 .proj:hover {
   cursor: pointer;
